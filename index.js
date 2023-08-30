@@ -5,7 +5,8 @@ const createWindow = () => {
     const win = new BrowserWindow({
         "webPreferences": {
             "sandbox": false,
-            "preload": join(__dirname, "preload.js")
+            "nodeIntegration": true,
+            "contextIsolation": false
         }
     });
     win.maximize();

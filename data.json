@@ -3,10 +3,11 @@
     "jars": "velab_data/",
     "version": {
         "type": "release",
-        "version": "1.20.1"
+        "number": "1.20.1"
     },
     "memory": {
-        "max": "5G"
+        "max": "5G",
+        "min": "2G"
     },
     "forgePath": "forge.jar",
     "modsPath": "mods/",
