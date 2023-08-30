@@ -1,0 +1,14 @@
+{
+    "root": "velab/",
+    "jars": "velab_data/",
+    "version": {
+        "type": "release",
+        "version": "1.20.1"
+    },
+    "memory": {
+        "max": "5G"
+    },
+    "forgePath": "forge.jar",
+    "modsPath": "mods/",
+    "ip": "localhost"
+}

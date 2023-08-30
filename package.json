@@ -1,0 +1,27 @@
+{
+  "name": "velablauncher",
+  "version": "0.1.0",
+  "description": "A launcher for VELAB",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Milk-Cool/VELABLauncher.git"
+  },
+  "keywords": [
+    "minecraft",
+    "velab"
+  ],
+  "author": "Milk_Cool",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Milk-Cool/VELABLauncher/issues"
+  },
+  "homepage": "https://github.com/Milk-Cool/VELABLauncher#readme",
+  "dependencies": {
+    "electron": "^25.7.0",
+    "minecraft-launcher-core": "^3.17.2"
+  }
+}
