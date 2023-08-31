@@ -3,6 +3,8 @@ const { join } = require("path");
 
 const createWindow = () => {
     const win = new BrowserWindow({
+        "minWidth": 900,
+        "minHeight": 700,
         "webPreferences": {
             "sandbox": false,
             "nodeIntegration": true,
@@ -11,6 +13,7 @@ const createWindow = () => {
     });
     win.maximize();
     win.loadFile("html/index.html");
+    if(!process.env.TEST) win.removeMenu();
     win.show();
 }
 

@@ -4,7 +4,10 @@
   "description": "A launcher for VELAB",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron-forge start",
+    "test": "TEST=1 electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "repository": {
     "type": "git",
@@ -21,7 +24,16 @@
   },
   "homepage": "https://github.com/Milk-Cool/VELABLauncher#readme",
   "dependencies": {
-    "electron": "^25.7.0",
+    "electron-squirrel-startup": "^1.0.0",
     "minecraft-launcher-core": "^3.17.2"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.4.1",
+    "@electron-forge/maker-deb": "^6.4.1",
+    "@electron-forge/maker-rpm": "^6.4.1",
+    "@electron-forge/maker-squirrel": "^6.4.1",
+    "@electron-forge/maker-zip": "^6.4.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.1",
+    "electron": "^25.8.0"
   }
 }

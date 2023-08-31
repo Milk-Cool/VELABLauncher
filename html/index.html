@@ -8,9 +8,15 @@
     </head>
     <body>
         <img id="bg">
-        <img src="icon.png" id="icon" width="150">
-        <h1 id="status">Hello World!</h1>
-        <button onclick="download()">Download</button>
-        <button onclick="run('user')">Run</button>
+        <div id="main">
+            <img src="icon.png" id="icon" width="300"><br>
+            <div id="progressbar">
+                <h2 id="progress">VELAB</h2>
+                <div id="bar"></div>
+            </div><br>
+            <input id="username" placeholder="Имя пользователя..."><br><br>
+            <button id="download" onclick="download()">Скачать</button>
+            <button id="run" onclick="run(document.querySelector('#username').value)">Запустить</button>
+        </div>
     </body>
 </html>
