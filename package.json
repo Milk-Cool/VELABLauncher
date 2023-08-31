@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "test": "TEST=1 electron ."
+    "test": "TEST=1 electron .",
+    "build": "electron-builder -wl"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,23 @@
     "minecraft-launcher-core": "^3.17.2"
   },
   "devDependencies": {
-    "electron": "^25.8.0"
+    "electron": "^25.8.0",
+    "electron-builder": "^24.6.3"
+  },
+  "build": {
+    "appId": "com.milkcool.velablauncher",
+    "mac": {
+      "category": "public.app-category.games",
+      "icon": "icons/mac.icns"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "icons/win.ico"
+    },
+    "linux": {
+      "target": "AppImage",
+      "description": "A launcher for the VELAB server client",
+      "category": "Game"
+    }
   }
 }
