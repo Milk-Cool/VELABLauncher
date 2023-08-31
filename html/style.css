@@ -1,0 +1,36 @@
+* {
+    color: white;
+}
+img#bg.bg0 {
+    background: url(bg0.jpg);
+    background-size: cover;
+}
+img#bg.bg1 {
+    background: url(bg1.jpg);
+    background-size: cover;
+}
+img#bg.bg2 {
+    background: url(bg2.jpg);
+    background-size: cover;
+}
+img#bg.bg3 {
+    background: url(bg3.jpg);
+    background-size: cover;
+}
+img#bg.bg4 {
+    background: url(bg4.jpg);
+    background-size: cover;
+}
+img#bg {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+}

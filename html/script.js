@@ -13,9 +13,11 @@ launcher.on("data", console.log);
 launcher.on("progress", console.log);
 
 const downloadFile = async (url, path) => {
+    console.log("Downloading", path);
     const f = await fetch(url);
     const buf = await f.arrayBuffer();
     writeFileSync(path, Buffer.from(buf));
+    console.log("Downloaded", path)
 };
 
 const download = async () => {
@@ -47,5 +49,16 @@ const run = async user => {
     await launcher.launch(opts);
 };
 const installed = () => {
-    return existsSync(data.root) && existsSync(data.jars);
+    if(!existsSync(data.root) || !existsSync(data.jars)) return false;
+    if(!existsSync(join(data.root, data.modsPath))) return false;
+    if(!existsSync(join(data.jars, data.forgePath))) return false;
+    for(let i of mods)
+        if(!existsSync(join(data.root, data.modsPath, i.path)))
+            return false;
+    return true;
 }
+
+document.querySelector("#status").innerText = installed() ? "Installed" : "Not installed";
+
+const randomBg = "bg" + Math.floor(Math.random() * 5);
+document.querySelector("img#bg").classList.add(randomBg);
