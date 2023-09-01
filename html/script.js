@@ -20,10 +20,11 @@ let progress = 0;
 let of = 0;
 
 const launcher = new Client();
-launcher.on("debug", console.log);
-launcher.on("data", console.log);
-launcher.on("progress", (e) => {
-    console.log(e);
+launcher.on("debug", e => document.querySelector("#logs").value += e + "\n");
+launcher.on("data", e => document.querySelector("#logs").value += e + "\n");
+launcher.on("download", e => document.querySelector("#logs").value += "Скачиваем " + e + "\n");
+launcher.on("progress", e => {
+    document.querySelector("#logs").value += JSON.stringify(e) + "\n";
     switch(e.type){
         case "classes-maven-custom":
             text = "Кастомные классы Maven";
@@ -47,13 +48,14 @@ launcher.on("progress", (e) => {
         of = 0;
     }
 });
+launcher.on("close", () => document.querySelector("#run").disabled = false);
 
 const downloadFile = async (url, path) => {
-    console.log("Downloading", path);
+    document.querySelector("#logs").value += "Скачиваем " + path + "\n";
     const f = await fetch(url);
     const buf = await f.arrayBuffer();
     writeFileSync(path, Buffer.from(buf));
-    console.log("Downloaded", path)
+    document.querySelector("#logs").value += "Скачали " + path + "\n";
 };
 
 const download = async () => {
@@ -83,6 +85,7 @@ const download = async () => {
 const run = async user => {
     if(!document.querySelector("#username").value)
         return alert("Вы не ввели имя пользователя!");
+    document.querySelector("#run").disabled = true;
     text = "Подождите...";
     const opts = {
         // "authorization": await Authenticator.getAuth(user),
@@ -122,7 +125,22 @@ if(installed()) {
 const randomBg = "bg" + Math.floor(Math.random() * 5);
 document.querySelector("img#bg").classList.add(randomBg);
 
+document.querySelector("#logs").style.display = "none";
+let logsShown = false;
+const toggleLogs = () => {
+    logsShown = !logsShown;
+    if(logsShown) {
+        document.querySelector("#logs").style.display = "inline-block";
+        document.querySelector("#icon").style.display = "none";
+    } else {
+        document.querySelector("#logs").style.display = "none";
+        document.querySelector("#icon").style.display = "inline-block";
+    }
+}
+
 setInterval(() => {
     document.querySelector("#progress").innerText = text + (of ? ` (${progress}/${of})` : "");
     document.querySelector("#bar").style.width = of == 0 ? "100%" : (progress / of * 100) + "%";
+
+    document.querySelector("#logs").scrollTo(0, document.querySelector("#logs").scrollHeight);
 }, 20);

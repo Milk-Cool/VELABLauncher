@@ -9,7 +9,7 @@
     <body>
         <img id="bg">
         <div id="main">
-            <img src="icon.png" id="icon" width="300"><br>
+            <img src="icon.png" id="icon" width="300"><textarea id="logs" readonly></textarea><br>
             <div id="progressbar">
                 <h2 id="progress">VELAB</h2>
                 <div id="bar"></div>
@@ -17,6 +17,7 @@
             <input id="username" placeholder="Имя пользователя..."><br><br>
             <button id="download" onclick="download()">Скачать</button>
             <button id="run" onclick="run(document.querySelector('#username').value)">Запустить</button>
+            <button id="logsb" onclick="toggleLogs()">Логи</button>
         </div>
     </body>
 </html>

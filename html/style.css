@@ -87,7 +87,7 @@ button:active:not([disabled]) {
 }
 
 
-input#username {
+input#username, #logs {
     border: 4px solid #ff5600;
     border-radius: 10px;
     margin: 5px;
@@ -95,4 +95,9 @@ input#username {
     color: #2b2034;
     box-shadow: 0 7px #77242e;
     transition: all .4s;
+}
+
+#logs {
+    width: 772px;
+    height: 278px;
 }

@@ -1,6 +1,6 @@
 {
   "name": "velablauncher",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A launcher for VELAB",
   "main": "index.js",
   "scripts": {
