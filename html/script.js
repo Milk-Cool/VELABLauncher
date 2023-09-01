@@ -2,6 +2,7 @@ const { Client, Authenticator } = require("minecraft-launcher-core");
 const { existsSync, readFileSync, writeFileSync, mkdirSync } = require("fs");
 const { join } = require("path");
 const { compareVersions } = require("compare-versions");
+const { shell } = require("electron");
 
 if(!localStorage.getItem("username"))
     localStorage.setItem("username", "");
@@ -117,6 +118,11 @@ const installed = () => {
     return true;
 }
 
+const openFolder = () => {
+    if(!existsSync(data.root)) return alert("Папки нет, игра не установлена!");
+    shell.showItemInFolder(join(process.cwd(), data.root));
+}
+
 if(installed()) {
     document.querySelector("#download").innerText = "Переустановить";
 } else {
@@ -157,7 +163,7 @@ const { version } = loadJSON("package.json");
         for(let i of json2.assets) {
             if((process.platform == "linux" && i.content_type == "application/vnd.appimage")
                 || (process.platform == "win32" && i.content_type == "application/x-ms-dos-executable"))
-                require("electron").shell.openExternal(i.browser_download_url);
+                shell.openExternal(i.browser_download_url);
         }
     }
 })();
