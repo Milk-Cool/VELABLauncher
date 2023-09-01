@@ -1,6 +1,7 @@
 const { Client, Authenticator } = require("minecraft-launcher-core");
 const { existsSync, readFileSync, writeFileSync, mkdirSync } = require("fs");
 const { join } = require("path");
+const { compareVersions } = require("compare-versions");
 
 if(!localStorage.getItem("username"))
     localStorage.setItem("username", "");
@@ -144,3 +145,19 @@ setInterval(() => {
 
     document.querySelector("#logs").scrollTo(0, document.querySelector("#logs").scrollHeight);
 }, 20);
+
+const { version } = loadJSON("package.json");
+(async () => {
+    const f = await fetch("https://raw.githubusercontent.com/Milk-Cool/VELABLauncher/main/package.json");
+    const json = await f.json();
+    if(compareVersions(json.version, version) == 1) {
+        alert("У вас установлена старая версия! Нажмите ОК, чтобы установить новую...");
+        const f2 = await fetch("https://api.github.com/repos/Milk-Cool/VELABLauncher/releases/latest");
+        const json2 = await f2.json();
+        for(let i of json2.assets) {
+            if((process.platform == "linux" && i.content_type == "application/vnd.appimage")
+                || (process.platform == "win32" && i.content_type == "application/x-ms-dos-executable"))
+                require("electron").shell.openExternal(i.browser_download_url);
+        }
+    }
+})();
