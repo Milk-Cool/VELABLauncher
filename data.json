@@ -6,7 +6,7 @@
         "number": "1.20.1"
     },
     "memory": {
-        "max": "5G",
+        "max": "4G",
         "min": "2G"
     },
     "forgePath": "forge.jar",
