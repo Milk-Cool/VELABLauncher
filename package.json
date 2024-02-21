@@ -44,6 +44,14 @@
       "target": "AppImage",
       "description": "A launcher for the VELAB server client",
       "category": "Game"
-    }
+    },
+    "files": [
+      "html/",
+      "icons/",
+      "data.json",
+      "index.js",
+      "mods.json",
+      "LICENSE"
+    ]
   }
 }
