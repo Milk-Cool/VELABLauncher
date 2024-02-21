@@ -24,7 +24,7 @@
   "homepage": "https://github.com/Milk-Cool/VELABLauncher#readme",
   "dependencies": {
     "compare-versions": "^6.1.0",
-    "minecraft-launcher-core": "^3.17.2"
+    "minecraft-launcher-core": "^3.17.3"
   },
   "devDependencies": {
     "electron": "^25.8.0",
