@@ -22,11 +22,11 @@ let progress = 0;
 let of = 0;
 
 const launcher = new Client();
-launcher.on("debug", e => document.querySelector("#logs").value += e + "\n");
-launcher.on("data", e => document.querySelector("#logs").value += e + "\n");
-launcher.on("download", e => document.querySelector("#logs").value += "Скачиваем " + e + "\n");
+launcher.on("debug", e => document.querySelector("#logs > textarea").value += e + "\n");
+launcher.on("data", e => document.querySelector("#logs > textarea").value += e + "\n");
+launcher.on("download", e => document.querySelector("#logs > textarea").value += "Скачиваем " + e + "\n");
 launcher.on("progress", e => {
-    document.querySelector("#logs").value += JSON.stringify(e) + "\n";
+    document.querySelector("#logs > textarea").value += JSON.stringify(e) + "\n";
     switch(e.type){
         case "classes-maven-custom":
             text = "Кастомные классы Maven";
@@ -53,11 +53,11 @@ launcher.on("progress", e => {
 launcher.on("close", () => document.querySelector("#run").disabled = false);
 
 const downloadFile = async (url, path) => {
-    document.querySelector("#logs").value += "Скачиваем " + path + "\n";
+    document.querySelector("#logs > textarea").value += "Скачиваем " + path + "\n";
     const f = await fetch(url);
     const buf = await f.arrayBuffer();
     writeFileSync(path, Buffer.from(buf));
-    document.querySelector("#logs").value += "Скачали " + path + "\n";
+    document.querySelector("#logs > textarea").value += "Скачали " + path + "\n";
 };
 
 const download = async () => {
@@ -149,7 +149,8 @@ setInterval(() => {
     document.querySelector("#progress").innerText = text + (of ? ` (${progress}/${of})` : "");
     document.querySelector("#bar").style.width = of == 0 ? "100%" : (progress / of * 100) + "%";
 
-    document.querySelector("#logs").scrollTo(0, document.querySelector("#logs").scrollHeight);
+    if(document.querySelector("#autoscrollb").checked)
+        document.querySelector("#logs > textarea").scrollTo(0, document.querySelector("#logs > textarea").scrollHeight);
 }, 20);
 
 const { version } = loadJSON("package.json");

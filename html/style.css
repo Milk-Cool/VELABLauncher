@@ -45,7 +45,7 @@ img#bg {
     padding: 30px;
 }
 
-button {
+button, input[type="checkbox"] {
     background: #ff8c0a;
     border: 4px solid #ff5600;
     border-radius: 10px;
@@ -87,7 +87,7 @@ button:active:not([disabled]) {
 }
 
 
-input#username, #logs {
+input#username, #logs > textarea {
     border: 4px solid #ff5600;
     border-radius: 10px;
     margin: 5px;
@@ -97,7 +97,16 @@ input#username, #logs {
     transition: all .4s;
 }
 
-#logs {
+#logs > textarea {
     width: 772px;
-    height: 278px;
+    height: 255px;
+}
+
+label {
+    color: white;
+    font-family: sans-serif;
+}
+#autoscrollb {
+    accent-color: #ff8c0a;
+    scale: 1.25;
 }
