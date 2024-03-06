@@ -1,0 +1,10 @@
+[
+    {
+        "url": "https://github.com/Milk-Cool/VELABmods/raw/main/etc/fabric_1.20.1.jar",
+        "path": "fabric.jar"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/Milk-Cool/VELABmods/main/etc/Fabric_1.20.1.json",
+        "path": "fabric.json"
+    }
+]

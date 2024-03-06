@@ -15,6 +15,7 @@ document.querySelector("#username").addEventListener("input", () => {
 const loadJSON = path => JSON.parse(readFileSync(join(__dirname, "../", path), "utf-8"));
 
 const { forge, mods } = loadJSON("mods.json");
+const files = loadJSON("files.json");
 const data = loadJSON("data.json");
 
 let text = "VELAB";
@@ -64,14 +65,17 @@ const download = async () => {
     const inst = installed();
     if(!existsSync(data.root)) mkdirSync(data.root);
     if(!existsSync(data.jars)) mkdirSync(data.jars);
+    if(!existsSync(data.fabric)) mkdirSync(data.fabric, { "recursive": true });
     if(!existsSync(join(data.root, data.modsPath))) mkdirSync(join(data.root, data.modsPath));
-    text = "Скачиваем Forge...";
+    text = "Скачиваем файлы ...";
     progress = 0;
-    of = mods.length + 1;
-    const forgeP = join(data.jars, data.forgePath);
-    if(inst || !existsSync(forgeP))
-        await downloadFile(forge, forgeP);
-    progress++;
+    of = mods.length + files.length;
+    for(let i of files) {
+        const p = join(data.fabric, i.path);
+        if(inst || !existsSync(p))
+            await downloadFile(i.url, p);
+        progress++;
+    }
     text = "Скачиваем моды...";
     for(let i of mods) {
         const p = join(data.root, data.modsPath, i.path);
@@ -95,7 +99,7 @@ const run = async user => {
         "root": data.root,
         "version": data.version,
         "memory": data.memory,
-        "forge": join(data.jars, data.forgePath),
+        // "forge": join(data.jars, data.forgePath),
         "quickPlay": {
             "type": "multiplayer",
             "identifier": data.ip,
@@ -114,6 +118,9 @@ const installed = () => {
     if(!existsSync(join(data.jars, data.forgePath))) return false;
     for(let i of mods)
         if(!existsSync(join(data.root, data.modsPath, i.path)))
+            return false;
+    for(let i of files)
+        if(!existsSync(join(data.fabric, i.path)))
             return false;
     return true;
 }

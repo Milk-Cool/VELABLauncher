@@ -2,12 +2,356 @@
     "forge": "https://maven.minecraftforge.net/net/minecraftforge/forge/1.20.1-47.1.44/forge-1.20.1-47.1.44-installer.jar",
     "mods": [
         {
-            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/fastload-reforged-8.2.11.20.1.jar",
-            "path": "fastload.jar"
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/AdvancementPlaques-1.20.1-fabric-1.4.11.jar",
+            "path": "advancement_plaques.v1.jar"
         },
         {
-            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/appleskin-forge-mc1.20.1-2.5.0.jar",
-            "path": "apple_skin.jar"
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/BetterF3-7.0.2-Fabric-1.20.1.jar",
+            "path": "betterf3.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/BetterThirdPerson-Fabric-1.20-1.9.0.jar",
+            "path": "betterthirdperson.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/CreativeCore_FABRIC_v2.11.24_mc1.20.1.jar",
+            "path": "creativecore.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/EasyAnvils-v8.0.2-1.20.1-Fabric.jar",
+            "path": "easyanvils.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/Fastload+1.18.2-1.20-3.4.0.jar",
+            "path": "fastload.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/Iceberg-1.20.1-fabric-1.1.18.jar",
+            "path": "iceberg.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/ItemPhysic_FABRIC_v1.7.0_mc1.20.1.jar",
+            "path": "itemphysic.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/Philips-Ruins1.20.1-3.2[Fabric].jar",
+            "path": "philipsruins.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/PuzzlesLib-v8.1.17-1.20.1-Fabric.jar",
+            "path": "puzzleslib.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/SereneSeasons-1.20.1-9.0.0.46.jar",
+            "path": "sereneseasons.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/Steam_Rails-1.5.1+fabric-mc1.20.1.jar",
+            "path": "steamrails.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/ToughAsNails-1.20.1-9.0.0.96.jar",
+            "path": "toughasnails.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/VisualWorkbench-v8.0.0-1.20.1-Fabric.jar",
+            "path": "visualworkbench.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/WI-Zoom-1.5-MC1.20.1.jar",
+            "path": "wizoom.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/WilderWild-2.3.2-Fabric+1.20.1.jar",
+            "path": "wilderwild.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/Xaeros_Minimap_23.9.7_Fabric_1.20.jar",
+            "path": "xaerosminimap.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/YungsApi-1.20-Fabric-4.0.3.jar",
+            "path": "yungsapi.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/appleskin-fabric-mc1.20.1-2.5.1.jar",
+            "path": "appleskin.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/architectury-9.2.14-fabric.jar",
+            "path": "architectury.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/bclib-3.0.14.jar",
+            "path": "bclib.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/better-clouds-1.3.16+1.20.1.jar",
+            "path": "betterclouds.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/better-end-4.0.11.jar",
+            "path": "betterend.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/betterarcheology-1.1.5-1.20.1.jar",
+            "path": "betterarcheology.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/betterendcitiesvanilla-1.20.1.jar",
+            "path": "betterendcities.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/betterstats-3.9.1+fabric-1.20.1.jar",
+            "path": "betterstats.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/blur-3.1.0.jar",
+            "path": "blur.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/botarium-fabric-1.20.1-2.3.3.jar",
+            "path": "botarium.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/cloth-config-11.1.118-fabric.jar",
+            "path": "clothconfig.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/continuity-3.0.0-beta.4+1.20.1.jar",
+            "path": "continuity.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/create-fabric-0.5.1-d-build.1161+mc1.20.1.jar",
+            "path": "create.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/create-new-age-fabric-1.20.1-1.1.jar",
+            "path": "createnewage.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/do_a_barrel_roll-fabric-3.5.1+1.20.1.jar",
+            "path": "doabarrelroll.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/doapi-1.2.8-fabric.jar",
+            "path": "doapi.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/dynamiccrosshair-7.4.4+1.20-fabric.jar",
+            "path": "dynamiccrosshair.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/dynamiclights-v1.7.1-mc1.17x-1.20x-mod.jar",
+            "path": "dynamiclights.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/eating-animation-1.20+1.9.5.jar",
+            "path": "eatinganimation.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/emotecraft-for-MC1.20.1-2.2.7-b.build.50-fabric.jar",
+            "path": "emotecraft.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/entity_model_features_fabric_1.20.1-1.3.jar",
+            "path": "entitymodelfeatures.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/entity_texture_features_fabric_1.20.1-5.2.3.jar",
+            "path": "entitytexturefeatures.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/entityculling-fabric-1.6.2-mc1.20.1.jar",
+            "path": "entityculling.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/eureka-1201-1.3.0-beta.4.jar",
+            "path": "eureka.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/explosive-enhancement-1.2.2-1.20.x.jar",
+            "path": "explosiveenhancement.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/fabric-api-0.92.0+1.11.3+1.20.1.jar",
+            "path": "fabricapi.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/fabric-api-0.92.0+1.20.1.jar",
+            "path": "fabricapi.v2.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/fabric-language-kotlin-1.10.18+kotlin.1.9.22.jar",
+            "path": "fabriclanguagekotlin.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/fallingleaves-1.15.4+1.20.1.jar",
+            "path": "fallingleaves.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/farmers-delight-fabric-1.4.3.jar",
+            "path": "farmersdelight.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/fastquit-3.0.0+1.20+.jar",
+            "path": "fastquit.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/geckolib-fabric-1.20.1-4.4.2.jar",
+            "path": "geckolib.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/handcrafted-fabric-1.20.1-3.0.6.jar",
+            "path": "handcrafted.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/harvest-1.3.1.jar",
+            "path": "harvest.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/jei-1.20.1-fabric-15.3.0.4.jar",
+            "path": "jei.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/justzoom_forge_1.0.2_MC_1.20.1.jar",
+            "path": "justzoom.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+            "path": "konkrete.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/letsdo-vinery-fabric-1.4.8.jar",
+            "path": "letsdovinery.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/make_bubbles_pop-0.2.0-fabric-mc1.19.4+.jar",
+            "path": "makebubblespop.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/malilib-fabric-1.20.1-0.16.3.jar",
+            "path": "malilib.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/memoryleakfix-fabric-1.17+-1.1.5.jar",
+            "path": "memoryleakfix.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/mes-1.3-1.20-fabric.jar",
+            "path": "mes.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/modmenu-7.2.2.jar",
+            "path": "modmenu.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/modmenu-badges-lib-2023.6.1.jar",
+            "path": "modmenubadgeslib.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/naturalist-fabric-4.0.3-1.20.1.jar",
+            "path": "naturalist.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/notenoughanimations-fabric-1.7.1-mc1.20.1.jar",
+            "path": "notenoughanimations.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/plasmovoice-fabric-1.20.1-2.0.8.jar",
+            "path": "plasmovoice.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/player-animation-lib-fabric-1.0.2-rc1+1.20.jar",
+            "path": "playeranimationlib.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/puffish_skills-0.11.3-1.20-fabric.jar",
+            "path": "puffishskills.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/pv-addon-discs-1.0.5.jar",
+            "path": "pvaddondiscs.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/resourcefullib-fabric-1.20.1-2.1.23.jar",
+            "path": "resourcefullib.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/reterraforged-0.0.6-fabric-1.20.1.jar",
+            "path": "reterraforged.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/seamless-loading-screen-2.0.3+1.20.1-fabric.jar",
+            "path": "seamlessloadingscreen.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/shulkerboxtooltip-fabric-4.0.4+1.20.1.jar",
+            "path": "shulkerboxtooltip.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/sit-1.20-24.jar",
+            "path": "sit.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/skinlayers3d-fabric-1.6.2-mc1.20.1.jar",
+            "path": "skinlayers3d.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/smoothswapping-0.9.3.1-1.20.2-fabric.jar",
+            "path": "smoothswapping.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/sound-physics-remastered-fabric-1.20.1-1.3.1.jar",
+            "path": "soundphysicsremastered.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/spyglass_astronomy-1.0.10-mc1.20.0-1.jar",
+            "path": "spyglassastronomy.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/status-effect-bars-1.0.3.jar",
+            "path": "statuseffectbars.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/stendhal-1.4.1-1.20.jar",
+            "path": "stendhal.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/tectonic-mod-1.19.3-v2.2.jar",
+            "path": "tectonicmod.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/tia-1.20-1.1-fabric.jar",
+            "path": "tia.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/tidal-towns-1.1.jar",
+            "path": "tidaltowns.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/tweakermore-mc1.20.1-v3.16.0.jar",
+            "path": "tweakermore.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/valkyrienskies-120-2.1.3-beta.1.jar",
+            "path": "valkyrienskies.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/visuality-0.7.0+1.20.jar",
+            "path": "visuality.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/wakes-0.2.3.jar",
+            "path": "wakes.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/yet-another-config-lib-fabric-3.2.2+1.20.jar",
+            "path": "yetanotherconfiglib.v1.jar"
+        },
+        {
+            "url": "https://github.com/Milk-Cool/VELABmods/raw/main/ForgeConfigAPIPort-v8.0.0-1.20.1-Fabric.jar",
+            "path": "forgeconfigapiport.v1.jar"
         }
     ]
 }

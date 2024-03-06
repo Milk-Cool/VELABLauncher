@@ -1,6 +1,6 @@
 {
   "name": "velablauncher",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A launcher for VELAB",
   "main": "index.js",
   "scripts": {
@@ -51,6 +51,7 @@
       "data.json",
       "index.js",
       "mods.json",
+      "files.json",
       "LICENSE"
     ]
   }

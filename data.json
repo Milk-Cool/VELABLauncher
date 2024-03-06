@@ -1,9 +1,11 @@
 {
     "root": "velab/",
     "jars": "velab_data/",
+    "fabric": "velab/versions/fabric/",
     "version": {
         "type": "release",
-        "number": "1.20.1"
+        "number": "1.20.1",
+        "custom": "fabric"
     },
     "memory": {
         "max": "4G",
@@ -11,5 +13,5 @@
     },
     "forgePath": "forge.jar",
     "modsPath": "mods/",
-    "ip": "themilk.keenetic.pro"
+    "ip": "77.232.130.254:25556"
 }
