@@ -1,6 +1,6 @@
 {
   "name": "velablauncher",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A launcher for VELAB",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,7 @@
       "icon": "icons/mac.icns"
     },
     "win": {
-      "target": "portable",
+      "target": "nsis",
       "icon": "icons/win.ico"
     },
     "linux": {
